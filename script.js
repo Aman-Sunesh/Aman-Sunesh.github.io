@@ -43,22 +43,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 {
   event.preventDefault(); // Prevent the default form submission
 
-  // Send the email using EmailJS
-  emailjs.send("service_at13aoc", "template_z39a68s", 
-    {
-    user_name: event.target.user_name.value,
-    user_email: event.target.user_email.value,
-    user_message: event.target.user_message.value
+  emailjs.send("service_at13aoc", "template_z39a68s", {
+    from_name: event.target.user_name.value,
+    from_email: event.target.user_email.value,
+    message: event.target.user_message.value
   })
-  .then(function(response) 
-  {
-     console.log('SUCCESS!', response.status, response.text);
-     showPopup(true); // Show success popup
-     event.target.reset(); // Reset the form fields
-  }, function(error) 
-  {
-     console.log('FAILED...', error);
-     alert('There was an error sending your message. Please try again later.');
+  .then(function(response) {
+    console.log('SUCCESS!', response.status, response.text);
+    showPopup(true); // Show success popup
+    event.target.reset(); // Reset the form fields
+  })
+  .catch(function(error) {
+    console.error('FAILED...', error);
+    alert('Error: Unable to send message. Please check the console for details.');
   });
-  
+
 });
