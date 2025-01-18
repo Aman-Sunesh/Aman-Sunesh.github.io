@@ -222,4 +222,5 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 - **HTML and CSS Documentation**: [W3Schools](https://www.w3schools.com/)
 - **JavaScript Documentation**: [MDN Web Docs](https://developer.mozilla.org/)
 - **Netlify**: For providing free and reliable hosting services.
+- **EmailJS**: For their easy-to-use email service API, simplifying contact form integration.
 - **Open Source Community**: For the plethora of tools and resources that made this project possible.
