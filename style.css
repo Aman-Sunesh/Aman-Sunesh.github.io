@@ -407,3 +407,64 @@ button:hover {
   font-size: 16px;       
   color: #444;           
 }
+
+/* Contact Me Section */
+#contact-me {
+  margin: 40px;
+  text-align: center;
+}
+
+/* Center the section heading and space it out */
+#contact-me h2 {
+  font-size: 50px;
+  color: #7600bc;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Layout */
+.contact-form {
+  max-width: 600px;       /* Restrict form width on large screens */
+  margin: 0 auto;         /* Center the form horizontally */
+  display: flex;
+  flex-direction: column; /* Stack labels & inputs vertically */
+}
+
+/* Labels */
+.contact-form label {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Text Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allow textarea resizing vertically if needed */
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: #7600bc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: center; /* Center the button horizontally */
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #580089; /* Darken button on hover */
+}
