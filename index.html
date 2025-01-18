@@ -1,182 +1,422 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Aman Sunesh - Portfolio</title>
-  <!-- Link to External CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Link to External JavaScript (Loaded at end of body via "defer") -->
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <!-- HEADER & NAVIGATION -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Aman Sunesh</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-  </header>
+<html>
+  <head>
+    <title>Aman Sunesh - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-section">
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Aman Sunesh</span></h1>
-      <p class="subheading">
-        I'm a Computer Engineering student at NYU Abu Dhabi, passionate about Quantum Computing, AI/ML, 
-        Self-driving cars, and Sustainability.
-      </p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="section-container">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <p><strong>Name:</strong> Aman Sunesh</p>
-      <p><strong>Location:</strong> Abu Dhabi, UAE</p>
-      <p>
-        I'm currently pursuing a Bachelor of Science in Computer Engineering at 
-        <strong>New York University Abu Dhabi</strong>. I have a deep interest 
-        in quantum computing, AI/ML, computer vision, and software development. 
-        When I'm not coding or learning about the latest tech, I enjoy reading, 
-        hiking, sports, and volunteering.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="section-container">
-    <h2>Projects</h2>
-    <div class="cards-container">
-      <!-- Card 1 -->
-      <div class="card">
-        <h3>Traffic Sign Classification</h3>
-        <p>
-          Built a custom classifier using computer vision (OpenCV) to recognize traffic 
-          signs in real time, enhancing road safety and driver assistance systems.
-        </p>
-      </div>
-      <!-- Card 2 -->
-      <div class="card">
-        <h3>Fear Analysis Using GSR Data</h3>
-        <p>
-          Analyzed Galvanic Skin Response data to measure emotional states, implementing 
-          signal processing in MATLAB and creating dynamic visualizations.
-        </p>
-      </div>
-      <!-- Card 3 -->
-      <div class="card">
-        <h3>VR Campus Tour</h3>
-        <p>
-          Developed an immersive virtual reality tour of the NYU Abu Dhabi campus using 
-          Unity and C#, offering prospective students a realistic campus exploration.
-        </p>
-      </div>
-      <!-- Card 4 -->
-      <div class="card">
-        <h3>Quantum Computing Projects</h3>
-        <p>
-          Worked on advanced quantum error suppression, quantum tunnelling simulations, 
-          and real-time experiments using Qiskit and various quantum hardware platforms.
-        </p>
+<!-- Navigation Bar -->
+<nav id = "home">
+  <div class="nav-container">
+    <div class="profile-info">
+      <img src="images/profile2.png" alt="Aman Sunesh's Profile Picture" class="profile-pic" />
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="images/envelope.png" alt="Email Icon" />
+          <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a>
+        </div>
+        <div class="contact-item">
+          <img src="images/phone.png" alt="Phone Icon" />
+          <a href="tel:+971545675180">+971 54 567 5180</a>
+        </div>
+        <div class="contact-item">
+          <img src="images/github2.png" alt="GitHub Icon" />
+          <a href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <div class="contact-item">
+          <img src="images/linkedin.png" alt="LinkedIn Icon" />
+          <a href="https://www.linkedin.com/in/aman-sunesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="topdiv">
+      <a class="topmenu" href="#about-me">About Me</a>
+      <a class="topmenu" href="#skills">Skills</a>
+      <a class="topmenu" href="#specialized-areas">Specialized Areas</a>
+      <a class="topmenu" href="#certifications">Certifications</a>
+      <a class="topmenu" href="#projects">Projects</a>
+      <a class="topmenu" href="#recommendations">Recommendations</a>
+    </div>
+  </div>
+</nav>
 
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience" class="section-container">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>Software Engineering Fellow, Headstarter (Remote)</h3>
-      <p><em>July 2024 – Present</em></p>
-      <ul>
-        <li>Coached by engineers from Amazon, Bloomberg, and Capital One on Agile, CI/CD, and microservices.</li>
-        <li>Led projects from design to deployment with a team of 4+ engineers using MVC patterns.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Math Tutor, NYUAD ARC (Abu Dhabi, UAE)</h3>
-      <p><em>Aug. 2024 – Present</em></p>
-      <ul>
-        <li>Provided one-on-one and group sessions to strengthen mathematical foundations for fellow students.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Student Research Assistant, NYUAD Center for Quantum & Topological Systems</h3>
-      <p><em>Sep. 2024 – Present</em></p>
-      <ul>
-        <li>Researched quantum hardware sensing using NV centers in diamonds.</li>
-        <li>Developed algorithms for quantum chemistry and computational problem solving.</li>
-      </ul>
-    </div>
-  </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="section-container">
-    <h2>Skills</h2>
-    <div class="skills-grid">
+    <!-- About Me (unchanged) -->
+    <section id="about-me" class="container">
       <div>
-        <h3>Technical</h3>
-        <ul>
-          <li>Python, C++, JavaScript, MySQL, HTML/CSS, C#</li>
-          <li>Pandas, NumPy, OpenCV, TensorFlow, PyTorch, Qiskit</li>
-          <li>Git, GitHub, Unity, Arduino, Jupyter Notebook</li>
-        </ul>
+        <img
+          src="images/profile.png"
+          class="profile_image"
+          alt="Aman Sunesh's Profile Picture"
+        />
       </div>
+
       <div>
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Problem-Solving & Analytical Thinking</li>
-          <li>Team Collaboration & Leadership</li>
-          <li>Time Management & Multitasking</li>
-          <li>Adaptability & Self-Motivation</li>
-        </ul>
+        <h1>
+          Hi, I'm Aman Sunesh!
+          <img src="images/waving-hand.png" width="60px" alt="Waving Hand" />
+        </h1>
+        <p>
+          I am a Computer Engineering student at NYU Abu Dhabi, passionate about Quantum Computing, AI/ML, 
+          Computer Vision, and Sustainable Technologies. I have a diverse skill set ranging from web 
+          development to mathematical modeling. I have developed various projects using Python, C++, and C#,
+           with deployment on platforms like IBM Cloud. I actively engage in research that integrates 
+           technology with practical applications, focusing on areas such as quantum computing, computer 
+           vision, artificial intelligence, and data analysis. 
+        </p>
       </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Programming Languages</h3>
+      <!-- Core Skills -->
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/python.png" alt="Python Icon" />
+          <h6>Python</h6>
+          <p>7 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="images/cpp.png" alt="C++ Icon" />
+          <h6>C++</h6>
+          <p>4 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="images/mysql.png" alt="MySQL Icon" />
+          <h6>MySQL</h6>
+          <p>4 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="images/js.jpeg" alt="JavaScript Icon" />
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill">
+          <img src="images/html5.png" alt="HTML5 Icon" />
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill">
+          <img src="images/CSS3.png" alt="CSS3 Icon" />
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>
+      </div>
+
+      <!-- Libraries & Frameworks (now a subsection of Skills) -->
+      <h3>Libraries & Frameworks</h3>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/pandas.png" alt="Pandas Logo" />
+          <h6>Pandas</h6>
+        </div>
+        <div class="skill">
+          <img src="images/matplotlib.png" alt="Matplotlib Logo" />
+          <h6>Matplotlib</h6>
+        </div>
+        <div class="skill">
+          <img src="images/numpy.png" alt="NumPy Logo" />
+          <h6>NumPy</h6>
+        </div>
+        <div class="skill">
+          <img src="images/opencv.png" alt="OpenCV Logo" />
+          <h6>OpenCV</h6>
+        </div>
+        <div class="skill">
+          <img src="images/seaborn.png" alt="Seaborn Logo" />
+          <h6>Seaborn</h6>
+        </div>
+        <div class="skill">
+          <img src="images/mediapipe.png" alt="MediaPipe Logo" />
+          <h6>MediaPipe</h6>
+        </div>
+        <div class="skill">
+          <img src="images/qiskit.png" alt="Qiskit Logo" />
+          <h6>Qiskit</h6>
+        </div>
+        <div class="skill">
+          <img src="images/tkinter.png" alt="Tkinter Logo" />
+          <h6>Tkinter</h6>
+        </div>
+        <div class="skill">
+          <img src="images/pygame.png" alt="Pygame Logo" />
+          <h6>Pygame</h6>
+        </div>
+        <div class="skill">
+          <img
+            src="images/mysqlconnector.png"
+            alt="mysql.connector Logo"
+          />
+          <h6>mysql.connector</h6>
+        </div>
+      </div>
+
+      <!-- Development Tools (now a subsection of Skills) -->
+      <h3>Development Tools</h3>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/vscode.png" alt="VS Code Logo" />
+          <h6>Visual Studio Code</h6>
+        </div>
+        <div class="skill">
+          <img src="images/github.png" alt="GitHub Logo" />
+          <h6>GitHub</h6>
+        </div>
+        <div class="skill">
+          <img src="images/git.png" alt="Git Logo" />
+          <h6>Git</h6>
+        </div>
+        <div class="skill">
+          <img
+            src="images/jupyter.png"
+            alt="Jupyter Notebook Logo"
+          />
+          <h6>Jupyter Notebook</h6>
+        </div>
+        <div class="skill">
+          <img src="images/arduino.png" alt="Arduino Logo" />
+          <h6>Arduino</h6>
+        </div>
+        <div class="skill">
+          <img src="images/unity.png" alt="Unity Logo" />
+          <h6>Unity</h6>
+        </div>
+        <div class="skill">
+          <img src="images/qbraid.png" alt="QBraid Logo" />
+          <h6>qBraid</h6>
+        </div>
+      </div>
+    </section>
+
+<!-- Specialized Areas -->
+<section id="specialized-areas">
+  <h2>Specialized Areas</h2>
+  <div class="all_cards">
+    <div class="card-large">
+      <h4>Computer Vision</h4>
+      <ul>
+        <li>Gesture-Control Suite (Gesture Recognition)</li>
+        <li>Hand Tracking</li>
+        <li>Face Tracking</li>
+      </ul>
     </div>
-  </section>
+    <div class="card-large">
+      <h4>Virtual Reality</h4>
+      <ul>
+        <li>eCampus Explorer (VR Campus Tour for NYU Abu Dhabi)</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Machine Learning</h4>
+      <ul>
+        <li>Wine Quality Prediction</li>
+        <li>Insurance Plan Estimation</li>
+        <li>Breast Cancer Detection (Logistic Regression)</li>
+        <li>Traffic Sign Classification</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Quantum Computing</h4>
+      <ul>
+        <li>Quantum Tunnelling Research</li>
+        <li>Quantum Error Suppression</li>
+        <li>Generating Efficient Hardware-Compliant Quantum Circuits</li>
+        <li>Utility-Scale Layer Fidelity Experiment</li>
+        <li>UConducted research on quantum hardware sensing using nitrogen vacancy (NV) centers in diamonds, exploring
+          their potential for high-precision measurements.t</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Data Analysis</h4>
+      <ul>
+        <li>Exploratory Data Analysis (Stack Overflow Survey 2023)</li>
+        <li>Flight Price Trends Analysis</li>
+        <li>Lossless Compression of Large Traffic Datasets</li>
+        <li>Error Correction Algorithms for Image Reconstruction</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Web Development</h4>
+      <ul>
+        <li>Personal Portfolio Website</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Database Management</h4>
+      <ul>
+        <li>Music Library System (Python + MySQL)</li>
+        <li>Employee Management System (python)</li>
+      </ul>
+    </div>
+    <div class="card-large">
+      <h4>Research & Innovation</h4>
+      <ul>
+        <li>Eco-Cooler Project (UAE Innovation Month)</li>
+        <li>Endangered Species Protection</li>
+        <li>NV Centers in Diamonds</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <!-- ACTIVITIES SECTION -->
-  <section id="activities" class="section-container">
-    <h2>Activities</h2>
-    <ul>
-      <li>Participated in DIDI Project Design Space</li>
-      <li>Exhibited at Dubai Land Department Science Exhibition</li>
-      <li>Engaged in Global Innovation Challenge</li>
-      <li>Volunteered in recycling campaigns and food donation drives</li>
-      <li>Joined Our Own World Model United Nations (OOWMUN)</li>
-    </ul>
-  </section>
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="all_cards">
+        <div class="card">
+          <img
+            src="images/IBM.png"
+            alt="IBM Quantum Logo"
+            class="card-icon"
+          />
+          <h6>IBM Quantum Excellence Badge</h6>
+          <p>IBM</p>
+        </div>
+        <div class="card">
+          <img
+            src="images/math-challenge.png"
+            alt="Math Challenge Logo"
+            class="card-icon"
+          />
+          <h6>Silver Honour in Mathematics</h6>
+          <p>International Youth Math Challenge</p>
+        </div>
+        <div class="card">
+          <img
+            src="images/IBM.png"
+            alt="Computer Vision Icon"
+            class="card-icon"
+          />
+          <h6>Introduction to Computer Vision & Image Processing</h6>
+          <p>IBM</p>
+        </div>
+        <div class="card">
+          <img
+            src="images/IBM.png"
+            alt="HTML CSS JS Icon"
+            class="card-icon"
+          />
+          <h6>Introduction to HTML, CSS & JavaScript</h6>
+          <p>IBM</p>
+        </div>
+        <div class="card">
+          <img
+            src="images/jovian.png"
+            alt="Python Data Icon"
+            class="card-icon"
+          />
+          <h6>Data Analysis and Visualization with Python</h6>
+          <p>Jovian</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="section-container">
-    <h2>Contact</h2>
-    <p>
-      <strong>Phone:</strong> +971 54 567 5180<br>
-      <strong>Email:</strong> <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a><br>
-    </p>
-    <p>
-      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aman-sunesh" target="_blank">linkedin.com/in/aman-sunesh</a><br>
-      <strong>GitHub:</strong> <a href="https://github.com/Aman-Sunesh" target="_blank">github.com/Aman-Sunesh</a>
-    </p>
-  </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Music Library System</h3>
+          <ul>
+            <li>Implemented a Python-based music library management system with MySQL integration for efficient data handling.</li>
+            <li>Incorporated secure CRUD operations to ensure scalability and robust user data protection.</li>
+            <li>Engineered secure user authentication within the music library system using password hashing and salting to safeguard user credentials.</li>
+            <li>Enabled music storage and playback capabilities, incorporating Pygame for interactive audio experiences.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Breast Cancer Detection</h3>
+          <ul>
+            <li>Developed a logistic regression model to differentiate between benign and malignant breast tumors with high accuracy.</li>
+            <li>Utilized data visualization techniques with Plotly and Seaborn to analyze tumor characteristics such as size and texture.</li>
+            <li>Utilized Python's Pandas and Scikit-learn libraries for data handling and machine learning processes.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Gesture Control Suite</h3>
+          <ul>
+            <li>Developed a Python-based application for controlling system volume and screen brightness using hand gestures, leveraging OpenCV and MediaPipe for gesture recognition.</li>
+            <li>Integrated Pycaw and screen_brightness_control libraries to translate gestures into system control commands, enhancing user interaction with devices.</li>
+            <li>Incorporated real-time hand landmark detection to facilitate intuitive and responsive control of multimedia and display settings via webcam.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>eCampus Explorer</h3>
+          <ul>
+            <li>Created a VR-based campus tour using Unity and C# for NYU Abu Dhabi.</li>
+            <li>Integrated high-resolution 360-degree images into Unity to create a realistic virtual environment.</li>
+            <li>Enabled users to seamlessly navigate through the campus using the Oculus controllers.</li>
+            <li> Incorporated features like audio descriptions and text-to-speech for an inclusive experience, ensuring that users of
+              all abilities can explore and understand the campus environment effectively</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>University Course Management System</h3>
+          <ul>
+            <li>Implemented a robust Course Management System using C++ tailored for educational institutions to manage courses, student enrollments, and academic records efficiently.</li>
+            <li>Ensured security and data privacy with a secure login system and role-based access controls, maintaining the
+              integrity of user data.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Lossless Traffic Data Compression</h3>
+          <ul>
+            <li>Researched techniques for compressing empirical representations of urban traffic data while ensuring perfect compression.</li>
+            <li>Applied matrix completion and nuclear norm minimization methods to achieve efficient encoding and decoding of traffic datasets.</li>
+            <li>Implemented sampling procedures based on uniform sampling conditions for data compression and recovery. </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Aman Sunesh | Abu Dhabi, UAE</p>
-  </footer>
-</body>
+    <!-- Recommendations (unchanged) -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Aman is a brilliant developer with excellent problem-solving skills.
+          His passion for quantum computing and AI is inspiring.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /><br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Scroll-to-Top Icon -->
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="images/white-arrow.jpg" alt="Home Icon" />
+      </a>
+    </div>
+
+    <!-- Pop-up for Recommendations -->
+    <div class="popup" id="popup">
+      <img src="images/checkmark-outline.png" alt="Success Icon" />
+      <h3>Your recommendation has been submitted!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
 </html>
