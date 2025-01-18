@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aman Sunesh - Portfolio</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to External JavaScript (Loaded at end of body via "defer") -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Aman Sunesh</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Aman Sunesh</span></h1>
+      <p class="subheading">
+        I'm a Computer Engineering student at NYU Abu Dhabi, passionate about Quantum Computing, AI/ML, 
+        Self-driving cars, and Sustainability.
+      </p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p><strong>Name:</strong> Aman Sunesh</p>
+      <p><strong>Location:</strong> Abu Dhabi, UAE</p>
+      <p>
+        I'm currently pursuing a Bachelor of Science in Computer Engineering at 
+        <strong>New York University Abu Dhabi</strong>. I have a deep interest 
+        in quantum computing, AI/ML, computer vision, and software development. 
+        When I'm not coding or learning about the latest tech, I enjoy reading, 
+        hiking, sports, and volunteering.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section-container">
+    <h2>Projects</h2>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <h3>Traffic Sign Classification</h3>
+        <p>
+          Built a custom classifier using computer vision (OpenCV) to recognize traffic 
+          signs in real time, enhancing road safety and driver assistance systems.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <h3>Fear Analysis Using GSR Data</h3>
+        <p>
+          Analyzed Galvanic Skin Response data to measure emotional states, implementing 
+          signal processing in MATLAB and creating dynamic visualizations.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <h3>VR Campus Tour</h3>
+        <p>
+          Developed an immersive virtual reality tour of the NYU Abu Dhabi campus using 
+          Unity and C#, offering prospective students a realistic campus exploration.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <h3>Quantum Computing Projects</h3>
+        <p>
+          Worked on advanced quantum error suppression, quantum tunnelling simulations, 
+          and real-time experiments using Qiskit and various quantum hardware platforms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section-container">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Software Engineering Fellow, Headstarter (Remote)</h3>
+      <p><em>July 2024 – Present</em></p>
+      <ul>
+        <li>Coached by engineers from Amazon, Bloomberg, and Capital One on Agile, CI/CD, and microservices.</li>
+        <li>Led projects from design to deployment with a team of 4+ engineers using MVC patterns.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Math Tutor, NYUAD ARC (Abu Dhabi, UAE)</h3>
+      <p><em>Aug. 2024 – Present</em></p>
+      <ul>
+        <li>Provided one-on-one and group sessions to strengthen mathematical foundations for fellow students.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Student Research Assistant, NYUAD Center for Quantum & Topological Systems</h3>
+      <p><em>Sep. 2024 – Present</em></p>
+      <ul>
+        <li>Researched quantum hardware sensing using NV centers in diamonds.</li>
+        <li>Developed algorithms for quantum chemistry and computational problem solving.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section-container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Technical</h3>
+        <ul>
+          <li>Python, C++, JavaScript, MySQL, HTML/CSS, C#</li>
+          <li>Pandas, NumPy, OpenCV, TensorFlow, PyTorch, Qiskit</li>
+          <li>Git, GitHub, Unity, Arduino, Jupyter Notebook</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-Solving & Analytical Thinking</li>
+          <li>Team Collaboration & Leadership</li>
+          <li>Time Management & Multitasking</li>
+          <li>Adaptability & Self-Motivation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES SECTION -->
+  <section id="activities" class="section-container">
+    <h2>Activities</h2>
+    <ul>
+      <li>Participated in DIDI Project Design Space</li>
+      <li>Exhibited at Dubai Land Department Science Exhibition</li>
+      <li>Engaged in Global Innovation Challenge</li>
+      <li>Volunteered in recycling campaigns and food donation drives</li>
+      <li>Joined Our Own World Model United Nations (OOWMUN)</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-container">
+    <h2>Contact</h2>
+    <p>
+      <strong>Phone:</strong> +971 54 567 5180<br>
+      <strong>Email:</strong> <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a><br>
+    </p>
+    <p>
+      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aman-sunesh" target="_blank">linkedin.com/in/aman-sunesh</a><br>
+      <strong>GitHub:</strong> <a href="https://github.com/Aman-Sunesh" target="_blank">github.com/Aman-Sunesh</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Aman Sunesh | Abu Dhabi, UAE</p>
+  </footer>
+</body>
+</html>
