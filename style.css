@@ -468,3 +468,40 @@ button:hover {
 .contact-form button:hover {
   background-color: #580089; /* Darken button on hover */
 }
+
+/* Pop-up */
+.popup {
+  width: 400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  padding-bottom: 20px;
+  z-index: 9999;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup h3 {
+  margin: 20px 0 0 0;
+}
+
+.popup button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7600bc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #580089;
+}
