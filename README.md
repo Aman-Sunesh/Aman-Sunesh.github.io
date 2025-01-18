@@ -151,7 +151,34 @@ Navigate to http://0.0.0.0:8080 or http://localhost:8080 in your browser to acce
   - Data visualization with Plotly and Seaborn
   - Utilized Pandas and Scikit-learn for data handling and machine learning
 
-*(Additional projects can be listed similarly)*
+#### Gesture Control Suite
+
+- **Description**: Developed a Python-based application for controlling system volume and screen brightness using hand gestures, leveraging OpenCV and MediaPipe for gesture recognition.
+- **Features**:
+  - Integrated Pycaw and screen_brightness_control libraries to translate gestures into system control commands, enhancing user interaction with devices.
+  - Incorporated real-time hand landmark detection to facilitate intuitive and responsive control of multimedia and display settings via webcam.
+
+#### eCampus Explorer
+
+- **Description**: Created a VR-based campus tour using Unity and C# for NYU Abu Dhabi.
+- **Features**:
+  - Integrated high-resolution 360-degree images into Unity to create a realistic virtual environment.
+  - Enabled users to seamlessly navigate through the campus using the Oculus controllers.
+  - Incorporated features like audio descriptions and text-to-speech for an inclusive experience, ensuring that users of all abilities can explore and understand the campus environment effectively.
+
+#### University Course Management System
+
+- **Description**: Implemented a robust Course Management System using C++ tailored for educational institutions to manage courses, student enrollments, and academic records efficiently.
+- **Features**:
+  - Ensured security and data privacy with a secure login system and role-based access controls, maintaining the integrity of user data.
+
+#### Lossless Traffic Data Compression
+
+- **Description**: Researched techniques for compressing empirical representations of urban traffic data while ensuring perfect compression.
+- **Features**:
+  - Applied matrix completion and nuclear norm minimization methods to achieve efficient encoding and decoding of traffic datasets.
+  - Implemented sampling procedures based on uniform sampling conditions for data compression and recovery.
+
 
 ## Troubleshooting
 
