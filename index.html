@@ -1,469 +1,298 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Aman Sunesh - Portfolio</title>
-  <link rel="stylesheet" href="./style.css" />
-  
-  <!-- Include EmailJS SDK -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init("Qg2fU0vZ-xiv09L-Q"); 
-    })();
-  </script>
-  
-  <script src="./script.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aman Sunesh • Portfolio</title>
+<meta name="description" content="Aman Sunesh — Computer Engineering @ NYU Abu Dhabi. Quantum sensing, AI/ML, computer vision, and full-stack engineering.">
+<meta name="theme-color" content="#6a11cb">
+<link rel="preconnect" href="https://cdn.emailjs.com">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js" defer></script>
+<script src="script.js" defer></script>
 </head>
-
 <body>
-
-<!-- Navigation Bar -->
-<nav id = "home">
-  <div class="nav-container">
-    <div class="profile-info">
-      <img src="images/profile2.png" alt="Aman Sunesh's Profile Picture" class="profile-pic" />
-      <div class="contact-info">
-        <div class="contact-item">
-          <img src="images/envelope.png" alt="Email Icon" />
-          <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a>
-        </div>
-        <div class="contact-item">
-          <img src="images/phone.png" alt="Phone Icon" />
-          <a href="tel:+971545675180">+971 54 567 5180</a>
-        </div>
-        <div class="contact-item">
-          <img src="images/github2.png" alt="GitHub Icon" />
-          <a href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-        <div class="contact-item">
-          <img src="images/linkedin.png" alt="LinkedIn Icon" />
-          <a href="https://www.linkedin.com/in/aman-sunesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-    <div class="topdiv">
-      <a class="topmenu" href="#about-me">About Me</a>
-      <a class="topmenu" href="#skills">Skills</a>
-      <a class="topmenu" href="#specialized-areas">Specialized Areas</a>
-      <a class="topmenu" href="#certifications">Certifications</a>
-      <a class="topmenu" href="#projects">Projects</a>
-      <a class="topmenu" href="#recommendations">Recommendations</a>
-      <a class="topmenu" href="#contact-me">Contact</a>
-    </div>
+<header class="site-header">
+  <div class="container nav">
+    <a href="#home" class="brand">Aman Sunesh</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
 
+<main id="home">
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Building quantum sensing systems and intelligent software</h1>
+      <p>Computer Engineering student at NYU Abu Dhabi (GPA 3.984/4.00), focused on quantum computing, AI/ML, computer vision, and research-grade tooling. I design end-to-end systems that fuse optics and RF hardware with Python UIs and data pipelines.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:as18181@nyu.edu">Email</a>
+        <a class="btn" href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/aman-sunesh" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>1st</span><small>NYUAD Research Poster</small></div>
+        <div class="stat"><span>82+</span><small>GitHub Repos</small></div>
+        <div class="stat"><span>NV</span><small>Quantum Sensing</small></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="images/profile.png" alt="Portrait of Aman Sunesh" class="portrait">
+    </div>
+  </section>
 
-    <!-- About Me (unchanged) -->
-    <section id="about-me" class="container">
+  <section id="about" class="container section">
+    <h2 class="section-title">About</h2>
+    <div class="about">
+      <p>I combine hands-on lab work in quantum sensing with pragmatic software engineering. Recent work includes a compact NV-center quantum diamond spectrometer with nanosecond pulse control and a PyQt6 GUI on top of QuPyt for code-free experiment execution. I also lead browser-based scientific tools, such as a PK/PD modeling platform with automated fitting, simulation, and PDF reporting. I value clarity, reproducibility, and robust UX for researchers.</p>
+      <ul class="quick-facts">
+        <li>Location: Abu Dhabi, UAE</li>
+        <li>Email: as18181@nyu.edu</li>
+        <li>Phone: +971 54 567 5180</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="container section">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid two">
       <div>
-        <img
-          src="images/profile.png"
-          class="profile_image"
-          alt="Aman Sunesh's Profile Picture"
-        />
+        <h3 class="subheading">Languages</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">C#</span>
+          <span class="chip">MySQL</span>
+        </div>
+        <h3 class="subheading">Libraries</h3>
+        <div class="chips">
+          <span class="chip">NumPy</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">OpenCV</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">Qiskit</span>
+        </div>
       </div>
-
       <div>
-        <h1>
-          Hi, I'm Aman Sunesh!
-          <img src="images/waving-hand.png" width="60px" alt="Waving Hand" />
-        </h1>
-        <p>
-          I am a Computer Engineering student at NYU Abu Dhabi with a <strong>GPA of 4.0</strong>, passionate about Quantum Computing, AI/ML, 
-          Computer Vision, and Sustainable Technologies. I have a diverse skill set ranging from web 
-          development to mathematical modeling. I have developed various projects using Python, C++, and C#,
-           with deployment on platforms like IBM Cloud. I actively engage in research that integrates 
-           technology with practical applications, focusing on areas such as quantum computing, computer 
-           vision, artificial intelligence, and data analysis. 
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>Programming Languages</h3>
-      <!-- Core Skills -->
-      <div class="all_skills">
-        <div class="skill">
-          <img src="images/python.png" alt="Python Icon" />
-          <h6>Python</h6>
-          <p>7 years experience</p>
+        <h3 class="subheading">Tools</h3>
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Jupyter</span>
+          <span class="chip">LaTeX</span>
+          <span class="chip">MATLAB</span>
+          <span class="chip">Cadence</span>
+          <span class="chip">Unity</span>
         </div>
-        <div class="skill">
-          <img src="images/cpp.png" alt="C++ Icon" />
-          <h6>C++</h6>
-          <p>4 years experience</p>
-        </div>
-        <div class="skill">
-          <img src="images/mysql.png" alt="MySQL Icon" />
-          <h6>MySQL</h6>
-          <p>4 years experience</p>
-        </div>
-        <div class="skill">
-          <img src="images/js.jpeg" alt="JavaScript Icon" />
-          <h6>JavaScript</h6>
-          <p>1 year experience</p>
-        </div>
-        <div class="skill">
-          <img src="images/html5.png" alt="HTML5 Icon" />
-          <h6>HTML</h6>
-          <p>1 year experience</p>
-        </div>
-        <div class="skill">
-          <img src="images/CSS3.png" alt="CSS3 Icon" />
-          <h6>CSS</h6>
-          <p>1 year experience</p>
+        <h3 class="subheading">Spoken</h3>
+        <div class="chips">
+          <span class="chip">English</span>
+          <span class="chip">Hindi</span>
+          <span class="chip">Malayalam</span>
+          <span class="chip">Arabic</span>
         </div>
       </div>
-
-      <!-- Libraries & Frameworks (now a subsection of Skills) -->
-      <h3>Libraries & Frameworks</h3>
-      <div class="all_skills">
-        <div class="skill">
-          <img src="images/pandas.png" alt="Pandas Logo" />
-          <h6>Pandas</h6>
-        </div>
-        <div class="skill">
-          <img src="images/matplotlib.png" alt="Matplotlib Logo" />
-          <h6>Matplotlib</h6>
-        </div>
-        <div class="skill">
-          <img src="images/numpy.png" alt="NumPy Logo" />
-          <h6>NumPy</h6>
-        </div>
-        <div class="skill">
-          <img src="images/opencv.png" alt="OpenCV Logo" />
-          <h6>OpenCV</h6>
-        </div>
-        <div class="skill">
-          <img src="images/seaborn.png" alt="Seaborn Logo" />
-          <h6>Seaborn</h6>
-        </div>
-        <div class="skill">
-          <img src="images/mediapipe.png" alt="MediaPipe Logo" />
-          <h6>MediaPipe</h6>
-        </div>
-        <div class="skill">
-          <img src="images/qiskit.png" alt="Qiskit Logo" />
-          <h6>Qiskit</h6>
-        </div>
-        <div class="skill">
-          <img src="images/tkinter.png" alt="Tkinter Logo" />
-          <h6>Tkinter</h6>
-        </div>
-        <div class="skill">
-          <img src="images/pygame.png" alt="Pygame Logo" />
-          <h6>Pygame</h6>
-        </div>
-        <div class="skill">
-          <img
-            src="images/mysqlconnector.png"
-            alt="mysql.connector Logo"
-          />
-          <h6>mysql.connector</h6>
-        </div>
-      </div>
-
-      <!-- Development Tools (now a subsection of Skills) -->
-      <h3>Development Tools</h3>
-      <div class="all_skills">
-        <div class="skill">
-          <img src="images/vscode.png" alt="VS Code Logo" />
-          <h6>Visual Studio Code</h6>
-        </div>
-        <div class="skill">
-          <img src="images/github.png" alt="GitHub Logo" />
-          <h6>GitHub</h6>
-        </div>
-        <div class="skill">
-          <img src="images/git.png" alt="Git Logo" />
-          <h6>Git</h6>
-        </div>
-        <div class="skill">
-          <img
-            src="images/jupyter.png"
-            alt="Jupyter Notebook Logo"
-          />
-          <h6>Jupyter Notebook</h6>
-        </div>
-        <div class="skill">
-          <img src="images/arduino.png" alt="Arduino Logo" />
-          <h6>Arduino</h6>
-        </div>
-        <div class="skill">
-          <img src="images/unity.png" alt="Unity Logo" />
-          <h6>Unity</h6>
-        </div>
-        <div class="skill">
-          <img src="images/qbraid.png" alt="QBraid Logo" />
-          <h6>qBraid</h6>
-        </div>
-      </div>
-    </section>
-
-<!-- Specialized Areas -->
-<section id="specialized-areas">
-  <h2>Specialized Areas</h2>
-  <div class="all_cards">
-    <div class="card-large">
-      <h4>Computer Vision</h4>
-      <ul>
-        <li>Gesture-Control Suite (Gesture Recognition)</li>
-        <li>Hand Tracking</li>
-        <li>Face Tracking</li>
-      </ul>
     </div>
-    <div class="card-large">
-      <h4>Virtual Reality</h4>
-      <ul>
-        <li>eCampus Explorer (VR Campus Tour for NYU Abu Dhabi)</li>
-      </ul>
+  </section>
+
+  <section id="experience" class="container section">
+    <h2 class="section-title">Experience & Research</h2>
+    <div class="timeline">
+      <article class="card">
+        <div class="card-head">
+          <h3>Research Assistant, Center for Quantum & Topological Systems</h3>
+          <span class="meta">NYU Abu Dhabi • Sep 2024 – Aug 2025</span>
+        </div>
+        <p>Built a compact quantum diamond spectrometer for NV-based sensing with nanosecond timing and a code-free PyQt6 GUI around QuPyt.</p>
+        <ul class="bullets">
+          <li>Integrated optics (532 nm laser, AOM gating, polarization), MW delivery, APD detection, and NI-DAQ acquisition synchronized via timing controller.</li>
+          <li>Developed GUI for protocol authoring, YAML generation, live ODMR fitting, and hardware control.</li>
+          <li>Presented to Mubadala on NV sensing for MRI enhancement; won 1st Place for Best Poster at NYUAD Summer Research Symposium 2025.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Software Lead, iGEM Dry Lab</h3>
+          <span class="meta">NYU Abu Dhabi • Jan 2025 – Present</span>
+        </div>
+        <p>Delivered a browser platform for PK/PD modeling with automated fitting, simulation, dosing regimens, KPIs, and PDF reports.</p>
+        <ul class="bullets">
+          <li>Implemented 1–3 compartment models across IV bolus/infusion, oral, and SC routes with interactive schedules.</li>
+          <li>Per-subject fitting with KPI extraction (Cmax, Tmax, AUC), linear/semilog plots, and VPCs.</li>
+          <li>PD coupling including Emax/Hill and EV→PMM2 activity mapping.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Engineering Volunteer, URBZ</h3>
+          <span class="meta">Dharavi, Mumbai • Jan 2025 – May 2025</span>
+        </div>
+        <p>Produced emergency-response routing and recharge strategies for Koliwada using field surveys, GPS, and OpenStreetMap/QGIS.</p>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Campus Spaces Committee Chair, Student Government</h3>
+          <span class="meta">NYU Abu Dhabi • Aug 2024 – May 2025</span>
+        </div>
+        <p>Led 15+ cross-department projects improving water access, Wi-Fi, laundry, and sustainability with feedback-driven systems.</p>
+      </article>
     </div>
-    <div class="card-large">
-      <h4>Machine Learning</h4>
-      <ul>
-        <li>Wine Quality Prediction</li>
-        <li>Insurance Plan Estimation</li>
-        <li>Breast Cancer Detection (Logistic Regression)</li>
-        <li>Traffic Sign Classification</li>
-      </ul>
-    </div>
-    <div class="card-large">
-      <h4>Quantum Computing</h4>
-      <ul>
-        <li>Quantum Tunnelling Research</li>
-        <li>Quantum Error Suppression</li>
-        <li>Generating Efficient Hardware-Compliant Quantum Circuits</li>
-        <li>Utility-Scale Layer Fidelity Experiment</li>
-        <li>UConducted research on quantum hardware sensing using nitrogen vacancy (NV) centers in diamonds, exploring
-          their potential for high-precision measurements.t</li>
-      </ul>
-    </div>
-    <div class="card-large">
-      <h4>Data Analysis</h4>
-      <ul>
-        <li>Exploratory Data Analysis (Stack Overflow Survey 2023)</li>
-        <li>Flight Price Trends Analysis</li>
-        <li>Lossless Compression of Large Traffic Datasets</li>
-        <li>Error Correction Algorithms for Image Reconstruction</li>
-      </ul>
-    </div>
-    <div class="card-large">
-      <h4>Web Development</h4>
-      <ul>
-        <li>Personal Portfolio Website</li>
-      </ul>
-    </div>
-    <div class="card-large">
-      <h4>Database Management</h4>
-      <ul>
-        <li>Music Library System (Python + MySQL)</li>
-        <li>Employee Management System (python)</li>
-      </ul>
-    </div>
-    <div class="card-large">
-      <h4>Research & Innovation</h4>
-      <ul>
-        <li>Eco-Cooler Project (UAE Innovation Month)</li>
-        <li>Endangered Species Protection</li>
-        <li>NV Centers in Diamonds</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
-    <!-- Certifications -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <div class="all_cards">
-        <div class="card">
-          <img
-            src="images/IBM.png"
-            alt="IBM Quantum Logo"
-            class="card-icon"
-          />
-          <h6>IBM Quantum Excellence Badge</h6>
-          <p>IBM</p>
-        </div>
-        <div class="card">
-          <img
-            src="images/math-challenge.png"
-            alt="Math Challenge Logo"
-            class="card-icon"
-          />
-          <h6>Silver Honour in Mathematics</h6>
-          <p>International Youth Math Challenge</p>
-        </div>
-        <div class="card">
-          <img
-            src="images/IBM.png"
-            alt="Computer Vision Icon"
-            class="card-icon"
-          />
-          <h6>Introduction to Computer Vision & Image Processing</h6>
-          <p>IBM</p>
-        </div>
-        <div class="card">
-          <img
-            src="images/IBM.png"
-            alt="HTML CSS JS Icon"
-            class="card-icon"
-          />
-          <h6>Introduction to HTML, CSS & JavaScript</h6>
-          <p>IBM</p>
-        </div>
-        <div class="card">
-          <img
-            src="images/jovian.png"
-            alt="Python Data Icon"
-            class="card-icon"
-          />
-          <h6>Data Analysis and Visualization with Python</h6>
-          <p>Jovian</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Music Library System</h3>
-          <ul>
-            <li>Implemented a Python-based music library management system with MySQL integration for efficient data handling.</li>
-            <li>Incorporated secure CRUD operations to ensure scalability and robust user data protection.</li>
-            <li>Engineered secure user authentication within the music library system using password hashing and salting to safeguard user credentials.</li>
-            <li>Enabled music storage and playback capabilities, incorporating Pygame for interactive audio experiences.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Breast Cancer Detection</h3>
-          <ul>
-            <li>Developed a logistic regression model to differentiate between benign and malignant breast tumors with high accuracy.</li>
-            <li>Utilized data visualization techniques with Plotly and Seaborn to analyze tumor characteristics such as size and texture.</li>
-            <li>Utilized Python's Pandas and Scikit-learn libraries for data handling and machine learning processes.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Gesture Control Suite</h3>
-          <ul>
-            <li>Developed a Python-based application for controlling system volume and screen brightness using hand gestures, leveraging OpenCV and MediaPipe for gesture recognition.</li>
-            <li>Integrated Pycaw and screen_brightness_control libraries to translate gestures into system control commands, enhancing user interaction with devices.</li>
-            <li>Incorporated real-time hand landmark detection to facilitate intuitive and responsive control of multimedia and display settings via webcam.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>eCampus Explorer</h3>
-          <ul>
-            <li>Created a VR-based campus tour using Unity and C# for NYU Abu Dhabi.</li>
-            <li>Integrated high-resolution 360-degree images into Unity to create a realistic virtual environment.</li>
-            <li>Enabled users to seamlessly navigate through the campus using the Oculus controllers.</li>
-            <li> Incorporated features like audio descriptions and text-to-speech for an inclusive experience, ensuring that users of
-              all abilities can explore and understand the campus environment effectively</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>University Course Management System</h3>
-          <ul>
-            <li>Implemented a robust Course Management System using C++ tailored for educational institutions to manage courses, student enrollments, and academic records efficiently.</li>
-            <li>Ensured security and data privacy with a secure login system and role-based access controls, maintaining the
-              integrity of user data.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Lossless Traffic Data Compression</h3>
-          <ul>
-            <li>Researched techniques for compressing empirical representations of urban traffic data while ensuring perfect compression.</li>
-            <li>Applied matrix completion and nuclear norm minimization methods to achieve efficient encoding and decoding of traffic datasets.</li>
-            <li>Implemented sampling procedures based on uniform sampling conditions for data compression and recovery. </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendations (unchanged) -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Aman is a brilliant developer with excellent problem-solving skills.
-          His passion for quantum computing and AI is inspiring.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>
-          <input type="text" placeholder="Name (Optional)" /><br />
-          <textarea
-            id="new_recommendation"
-            cols="500"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact-me">
-      <h2>Contact Me</h2>
-      <form class="contact-form" id="contact-form">
-        <label for="user_name">Name</label>
-        <input 
-          type="text"
-          id="user_name"
-          name="user_name"
-          placeholder="Your Name"
-          required
-        />
-
-        <label for="user_email">Email</label>
-        <input 
-          type="email"
-          id="user_email"
-          name="user_email"
-          placeholder="Your Email"
-          required
-        />
-
-        <label for="user_message">Message</label>
-        <textarea
-          id="user_message"
-          name="user_message"
-          placeholder="Write your message here..."
-          rows="6"
-          required
-        ></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-
-
-    <!-- Scroll-to-Top Icon -->
-    <div class="iconbutton">
-      <a href="#home">
-        <img src="images/white-arrow.jpg" alt="Home Icon" />
+  <section id="projects" class="container section">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid three">
+      <a class="project card" href="https://github.com/Aman-Sunesh/QuPyT-GUI-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
+        <h3>QuPyt GUI for Quantum Sensing</h3>
+        <p>PyQt6 interface for code-free NV experiments: protocol editor, YAML generation, live ODMR fitting, and device control.</p>
+        <div class="tags"><span>Python</span><span>PyQt6</span><span>DAQ</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/EV-PK-Simulator" target="_blank" rel="noopener">
+        <h3>EV-PK Simulator</h3>
+        <p>Web app for PK/PD fitting and simulation with KPI extraction, dosing builder, VPCs, and PDF export.</p>
+        <div class="tags"><span>React</span><span>FastAPI</span><span>SciPy</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/NV-ODMR-Simulator-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
+        <h3>NV ODMR Simulator</h3>
+        <p>Simulates ODMR spectra and experiments to accelerate NV-sensing development and validation.</p>
+        <div class="tags"><span>Python</span><span>Simulation</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/CycleGAN-for-Cultural-Style-Transfer-Translating-Bandhani-Textile-Motifs-to-Contemporary-Style" target="_blank" rel="noopener">
+        <h3>Bandhani Style Transfer</h3>
+        <p>CycleGAN translating traditional textile motifs into contemporary designs with curated datasets.</p>
+        <div class="tags"><span>PyTorch</span><span>GANs</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Multi-Label-Conditional-Diffusion-for-Disease-Specific-Chest-X-ray-Synthesis-using-ChestX-ray14" target="_blank" rel="noopener">
+        <h3>Chest X-ray Diffusion</h3>
+        <p>Conditional diffusion to synthesize disease-specific images, augmenting rare pathology training.</p>
+        <div class="tags"><span>Diffusion</span><span>Medical ML</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Time-Series-Forecasting-Forecasting-the-Lorenz-System-with-Fully-Connected-Feedforward-Networks" target="_blank" rel="noopener">
+        <h3>Lorenz Forecasting</h3>
+        <p>Forecasts chaotic dynamics using FC networks with careful normalization and rollout evaluation.</p>
+        <div class="tags"><span>Deep Learning</span><span>Dynamics</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Custom-14-bit-Microprocessor-FPGA-Implementation" target="_blank" rel="noopener">
+        <h3>Custom 14-bit µProcessor</h3>
+        <p>RTL design and FPGA implementation with ALU and control for educational compute pipelines.</p>
+        <div class="tags"><span>FPGA</span><span>RTL</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Audio2Text-Transcriber" target="_blank" rel="noopener">
+        <h3>Audio2Text Transcriber</h3>
+        <p>Lightweight audio transcription toolkit with configurable inference options.</p>
+        <div class="tags"><span>Python</span><span>ASR</span></div>
       </a>
     </div>
+  </section>
 
-    <!-- Pop-up for Recommendations -->
-    <div class="popup" id="popup">
-      <img src="images/checkmark-outline.png" alt="Success Icon" />
-      <h3>Your recommendation has been submitted!</h3>
-      <button onclick="showPopup(false)">Ok</button>
+  <section id="education" class="container section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <article class="card">
+        <div class="card-head">
+          <h3>New York University Abu Dhabi</h3>
+          <span class="meta">B.Sc. Computer Engineering • Minor in Applied Mathematics • Aug 2023 – May 2027</span>
+        </div>
+        <p>GPA 3.984/4.00. Coursework includes Applied ML, Data Structures & Algorithms, Digital Logic, Circuits, Probability & Statistics, ODE/PDEs, Mathematical Modeling.</p>
+        <p>Activities: Quantum Association, Student Government (Campus Spaces Chair), iGEM Software/Modeling, EA Fellowships, URBZ Dharavi.</p>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>The Coding School</h3>
+          <span class="meta">Quantum Computing • Sep 2024 – Apr 2025</span>
+        </div>
+        <p>Two-semester program by Google AI & The Coding School covering quantum algorithms, cryptography, entanglement, and superposition with Python labs.</p>
+      </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>GEMS Education</h3>
+          <span class="meta">High School Diploma • Apr 2009 – Mar 2023</span>
+        </div>
+        <p>CBSE 97.6% Senior Secondary. Principal’s Award for Excellence and leadership roles.</p>
+      </article>
     </div>
-  </body>
+  </section>
+
+  <section id="awards" class="container section">
+    <h2 class="section-title">Certifications & Awards</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3>IBM Quantum Excellence Badge</h3>
+        <p>Completed labs in quantum programming and error correction.</p>
+      </div>
+      <div class="card">
+        <h3>Qiskit Global Summer School 2024</h3>
+        <p>Participation and IBM Quantum labs.</p>
+      </div>
+      <div class="card">
+        <h3>International Youth Math Challenge</h3>
+        <p>Silver Honour.</p>
+      </div>
+      <div class="card">
+        <h3>Intro to Computer Vision & Image Processing</h3>
+        <p>IBM.</p>
+      </div>
+      <div class="card">
+        <h3>Intro to HTML, CSS & JavaScript</h3>
+        <p>IBM.</p>
+      </div>
+      <div class="card">
+        <h3>Best Research Poster</h3>
+        <p>NYUAD Summer Research Symposium 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container section">
+    <h2 class="section-title">Contact</h2>
+    <form class="contact" id="contact-form">
+      <div class="grid two">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+      </div>
+      <button class="btn primary" id="submit-btn" type="submit">Send Message</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      <div class="alt-contact">
+        <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a> • <a href="tel:+971545675180">+971 54 567 5180</a>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <div class="foot-links">
+      <a href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aman-sunesh" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:as18181@nyu.edu">Email</a>
+    </div>
+    <div class="foot-copy">© <span id="year"></span> Aman Sunesh</div>
+  </div>
+</footer>
+
+<a href="#home" class="to-top" id="to-top" aria-label="Back to top">↑</a>
+</body>
 </html>
