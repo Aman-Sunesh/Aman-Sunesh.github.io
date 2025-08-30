@@ -103,6 +103,19 @@ body{
 .grid{display:grid;gap:18px}
 .grid.two{grid-template-columns:1fr 1fr}
 .grid.three{grid-template-columns:repeat(3,1fr)}
+.grid.two, .grid.three{
+  align-items: stretch;         
+}
+.grid.two > .card, .grid.three > .card{
+  height: 100%;                    
+  display: flex;                  
+  flex-direction: column;
+}
+.grid.two > .card .tags,
+.grid.three > .card .tags{
+  margin-top: auto;
+}
+.grid > .card{ margin-top: 0 !important; }
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:13px}
 .timeline{display:grid;gap:18px}
