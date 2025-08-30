@@ -246,3 +246,12 @@ details.more-roles .card + .card{
   white-space: nowrap;
   border: 0;
 }
+
+.section{ scroll-margin-top: 72px; }
+@media (max-width:720px){
+  .section{ scroll-margin-top: 56px; }
+}
+
+details.more-roles > summary{ margin-bottom: 10px; }
+
+img{ max-width:100%; height:auto; }
