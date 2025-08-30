@@ -4,11 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aman Sunesh • Portfolio</title>
-<meta name="description" content="Aman Sunesh — Computer Engineering @ NYU Abu Dhabi. Quantum sensing, AI/ML, computer vision, and full-stack engineering.">
+<meta name="description" content="Aman Sunesh — Computer Engineering @ NYU Abu Dhabi. I build quantum sensing systems, ML pipelines, and end-to-end scientific tools that work.">
 <meta name="theme-color" content="#6a11cb">
-<link rel="preconnect" href="https://cdn.emailjs.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({
+    publicKey: "Qg2fU0vZ-xiv09L-Q",
+    blockHeadless: true,
+    limitRate: { id: "portfolio-contact", throttle: 8000 }
+  });
+</script>
 <script src="script.js" defer></script>
 </head>
 <body>
@@ -27,37 +34,49 @@
     </nav>
   </div>
 </header>
-
 <main id="home">
   <section class="hero container">
     <div class="hero-text">
-      <h1>Building quantum sensing systems and intelligent software</h1>
-      <p>Computer Engineering student at NYU Abu Dhabi (GPA 3.984/4.00), focused on quantum computing, AI/ML, computer vision, and research-grade tooling. I design end-to-end systems that fuse optics and RF hardware with Python UIs and data pipelines.</p>
+      <h1>Designing intelligent systems — from quantum sensors to machine learning pipelines</h1>
+      <p>I'm a Computer Engineering student at NYU Abu Dhabi building practical tools at the intersection of quantum technology and AI. My work spans quantum sensing platforms using NV centers and pulse-timed optics, full-stack pharmacokinetic simulation apps, and machine learning pipelines for medical imaging and vision tasks. I care about reproducibility, hardware–software synergy, and results that ship.</p>
       <div class="cta">
-        <a class="btn primary" href="mailto:as18181@nyu.edu">Email</a>
+        <a
+          class="btn primary"
+          id="email-cta"
+          href="mailto:as18181@nyu.edu"
+          data-mailto="mailto:as18181@nyu.edu?subject=Hello%20Aman&body=Hi%20Aman%2C%0A"
+          data-scroll-target="#contact"
+          role="button"
+          aria-label="Email Aman"
+        >
+          Email
+        </a>
         <a class="btn" href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/aman-sunesh" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="stats">
-        <div class="stat"><span>1st</span><small>NYUAD Research Poster</small></div>
-        <div class="stat"><span>82+</span><small>GitHub Repos</small></div>
-        <div class="stat"><span>NV</span><small>Quantum Sensing</small></div>
+        <div class="stat"><span>1st</span><small>Best Research Poster (NYUAD '25)</small></div>
+        <div class="stat"><span>82+</span><small>Public GitHub Projects</small></div>
+        <div class="stat"><span>Developed</span><small>NYUAD’s First Quantum Sensing System</small></div>
+        <div class="stat"><span>20+</span><small>End-to-End ML Pipelines</small></div>
       </div>
     </div>
     <div class="hero-media">
-      <img src="images/profile.png" alt="Portrait of Aman Sunesh" class="portrait">
+      <img src="images/profile.jpg" alt="Portrait of Aman Sunesh" class="portrait">
     </div>
   </section>
 
   <section id="about" class="container section">
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title">About Me</h2>
     <div class="about">
-      <p>I combine hands-on lab work in quantum sensing with pragmatic software engineering. Recent work includes a compact NV-center quantum diamond spectrometer with nanosecond pulse control and a PyQt6 GUI on top of QuPyt for code-free experiment execution. I also lead browser-based scientific tools, such as a PK/PD modeling platform with automated fitting, simulation, and PDF reporting. I value clarity, reproducibility, and robust UX for researchers.</p>
-      <ul class="quick-facts">
-        <li>Location: Abu Dhabi, UAE</li>
-        <li>Email: as18181@nyu.edu</li>
-        <li>Phone: +971 54 567 5180</li>
-      </ul>
+      <p>I work across AI and quantum, building everything from deep learning models to real-world sensing systems. On the quantum side, I developed a <strong>Full-Stack NV-center spectrometer</strong> with nanosecond pulse control and a PyQt6 GUI for code-free experiment execution. In ML, I lead projects end-to-end—from scraping and curating datasets to training models and shipping interactive tools. Recent work includes <strong>GANDhani</strong>, a CycleGAN-based cultural style transfer system for textile design, featuring custom scraping scripts, curated Kaggle datasets, PyTorch training loops, and a live Gradio demo. I care about clarity, reproducibility, and building things that actually work.</p>
+
+      <div class="facts card">
+        <div class="kv"><span class="k">Location</span><span class="v">Manhattan, New York</span></div>
+        <div class="kv"><span class="k">Email</span><span class="v"><a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a></span></div>
+        <div class="kv"><span class="k">US Phone</span><span class="v"><a href="tel:+16464565870">+1 646 456 5870</a></span></div>
+        <div class="kv"><span class="k">UAE Phone</span><span class="v"><a href="tel:+971545675180">+971 54 567 5180</a></span></div>
+      </div>
     </div>
   </section>
 
@@ -110,46 +129,91 @@
 
   <section id="experience" class="container section">
     <h2 class="section-title">Experience & Research</h2>
-    <div class="timeline">
-      <article class="card">
-        <div class="card-head">
-          <h3>Research Assistant, Center for Quantum & Topological Systems</h3>
-          <span class="meta">NYU Abu Dhabi • Sep 2024 – Aug 2025</span>
-        </div>
-        <p>Built a compact quantum diamond spectrometer for NV-based sensing with nanosecond timing and a code-free PyQt6 GUI around QuPyt.</p>
-        <ul class="bullets">
-          <li>Integrated optics (532 nm laser, AOM gating, polarization), MW delivery, APD detection, and NI-DAQ acquisition synchronized via timing controller.</li>
-          <li>Developed GUI for protocol authoring, YAML generation, live ODMR fitting, and hardware control.</li>
-          <li>Presented to Mubadala on NV sensing for MRI enhancement; won 1st Place for Best Poster at NYUAD Summer Research Symposium 2025.</li>
+
+    <article class="card role">
+      <header class="role-head">
+        <h3>Student Research Assistant, Center for Quantum & Topological Systems (CQTS)</h3>
+        <div class="role-sub">NYU Abu Dhabi • Abu Dhabi, UAE</div>
+        <div class="role-dates">Sep 2024 – Present</div>
+      </header>
+      <p>Engineered a full-stack NV-center quantum diamond spectrometer for sensing.</p>
+      <ul class="bullets tight">
+        <li>Executed precision optical alignment (beam focusing, AOM diffraction, polarization control).</li>
+        <li>Synchronized RF/MW pulse sequences with NI-DAQ via PulseBlaster timing; implemented APD-based photon detection.</li>
+        <li>Built a PyQt6 GUI around QuPyt for code-free execution: automated YAML/pulse-sequence generation, live ODMR fitting, nanosecond-level hardware sync, and intuitive experiment setup.</li>
+        <li>Delivered a technical presentation to Mubadala UAE on integrating NV-based sensing for MRI enhancement (hardware-software workflow and experimental challenges).</li>
+        <li>Presented at NYUAD Summer Symposium 2025; awarded 1st Place for Best Poster.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>PyQt6</span><span>QuPyt</span><span>DAQ</span></div>
+    </article>
+
+    <article class="card role">
+      <header class="role-head">
+        <h3>Software Lead, iGEM Dry Lab</h3>
+        <div class="role-sub">NYU Abu Dhabi • Abu Dhabi, UAE</div>
+        <div class="role-dates">Jan 2025 – Present</div>
+      </header>
+      <p>Led full-stack development of a PK/PD modeling platform for fitting, simulation, sharing, and reporting.</p>
+      <ul class="bullets tight">
+        <li>React/FastAPI web app with 1-, 2-, and 3-compartment models; supports IV bolus/infusion, oral, and SC routes.</li>
+        <li>Interactive dosing-regimen builder for repeats, custom multi-dose schedules, and infusion windows with live simulations.</li>
+        <li>Per-subject fitting (SciPy) with KPIs (Cmax, Tmax, AUC), linear/semilog plots, VPCs, and auto-generated PDF reports.</li>
+        <li>Designed PD coupling that consumes PK C(t) and returns effect-time series, including antibiotic kill dynamics (Emax/Hill) and EV→PMM2 activity mapping.</li>
+      </ul>
+      <div class="tags"><span>React</span><span>FastAPI</span><span>SciPy</span><span>PK/PD</span></div>
+    </article>
+
+    <article class="card role">
+      <header class="role-head">
+        <h3>Engineering Volunteer, URBZ</h3>
+        <div class="role-sub">Dharavi, Mumbai, India</div>
+        <div class="role-dates">Jan 2025 – May 2025</div>
+      </header>
+      <p>Produced emergency-response routing and recharge strategies for Koliwada using field surveys, GPS, and open mapping.</p>
+      <ul class="bullets tight">
+        <li>Mapped critical emergency routes; conducted on-site surveys and GPS tracking to generate actionable, low-tech recommendations.</li>
+        <li>Built a detailed emergency-response map by integrating observations and GPS data into OpenStreetMap and QGIS.</li>
+        <li>Engineered an 8-minute fire-response plan and groundwater recharge strategy: sized pump/nozzle systems, proposed dual-use overhead tanks, and revived defunct wells as percolation pits.</li>
+      </ul>
+      <div class="tags"><span>OpenStreetMap</span><span>QGIS</span><span>Field Work</span></div>
+    </article>
+
+    <article class="card role secondary">
+      <header class="role-head">
+        <h3>Campus Spaces Committee Chair, Student Government</h3>
+        <div class="role-sub">NYU Abu Dhabi • Abu Dhabi, UAE</div>
+        <div class="role-dates">Aug 2024 – May 2025</div>
+      </header>
+      <p>Led 15+ cross-department projects improving water access, Wi-Fi, laundry, and sustainability with feedback-driven systems.</p>
+    </article>
+
+    <details class="more-roles">
+      <summary>More roles</summary>
+      <article class="card role tertiary">
+        <header class="role-head">
+          <h3>Math Tutor</h3>
+          <div class="role-sub">NYU Abu Dhabi</div>
+          <div class="role-dates">Aug 2024 – Jun 2025</div>
+        </header>
+        <ul class="bullets tight">
+          <li>100+ hours tutoring calculus, linear algebra, and differential equations.</li>
         </ul>
+        <div class="tags"><span>Mathematics</span><span>Tutoring</span></div>
       </article>
-      <article class="card">
-        <div class="card-head">
-          <h3>Software Lead, iGEM Dry Lab</h3>
-          <span class="meta">NYU Abu Dhabi • Jan 2025 – Present</span>
-        </div>
-        <p>Delivered a browser platform for PK/PD modeling with automated fitting, simulation, dosing regimens, KPIs, and PDF reports.</p>
-        <ul class="bullets">
-          <li>Implemented 1–3 compartment models across IV bolus/infusion, oral, and SC routes with interactive schedules.</li>
-          <li>Per-subject fitting with KPI extraction (Cmax, Tmax, AUC), linear/semilog plots, and VPCs.</li>
-          <li>PD coupling including Emax/Hill and EV→PMM2 activity mapping.</li>
+
+      <article class="card role tertiary">
+        <header class="role-head">
+          <h3>Software Engineering Fellow, Headstarter</h3>
+          <div class="role-sub">Remote</div>
+          <div class="role-dates">Jul 2024 – Jan 2025</div>
+        </header>
+        <ul class="bullets tight">
+          <li>Coached by engineers from Amazon, Bloomberg, and Capital One on Agile, CI/CD, Git, and microservice patterns.</li>
+          <li>Led 4+ fellows to deliver projects end-to-end using MVC patterns.</li>
         </ul>
+        <div class="tags"><span>Software</span><span>Agile</span><span>CI/CD</span></div>
       </article>
-      <article class="card">
-        <div class="card-head">
-          <h3>Engineering Volunteer, URBZ</h3>
-          <span class="meta">Dharavi, Mumbai • Jan 2025 – May 2025</span>
-        </div>
-        <p>Produced emergency-response routing and recharge strategies for Koliwada using field surveys, GPS, and OpenStreetMap/QGIS.</p>
-      </article>
-      <article class="card">
-        <div class="card-head">
-          <h3>Campus Spaces Committee Chair, Student Government</h3>
-          <span class="meta">NYU Abu Dhabi • Aug 2024 – May 2025</span>
-        </div>
-        <p>Led 15+ cross-department projects improving water access, Wi-Fi, laundry, and sustainability with feedback-driven systems.</p>
-      </article>
-    </div>
+    </details>
   </section>
 
   <section id="projects" class="container section">
@@ -157,101 +221,197 @@
     <div class="grid three">
       <a class="project card" href="https://github.com/Aman-Sunesh/QuPyT-GUI-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
         <h3>QuPyt GUI for Quantum Sensing</h3>
-        <p>PyQt6 interface for code-free NV experiments: protocol editor, YAML generation, live ODMR fitting, and device control.</p>
-        <div class="tags"><span>Python</span><span>PyQt6</span><span>DAQ</span></div>
+        <p>PyQt6 interface for code-free Quantum Sensing experiments: protocol editor, YAML generation, live ODMR fitting, and device control.</p>
+        <div class="tags"><span>Python</span><span>PyQt6</span><span>GUI Design</span><span>Experiment Automation</span><span>Quantum Control</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/EV-PK-Simulator" target="_blank" rel="noopener">
         <h3>EV-PK Simulator</h3>
         <p>Web app for PK/PD fitting and simulation with KPI extraction, dosing builder, VPCs, and PDF export.</p>
-        <div class="tags"><span>React</span><span>FastAPI</span><span>SciPy</span></div>
-      </a>
-      <a class="project card" href="https://github.com/Aman-Sunesh/NV-ODMR-Simulator-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
-        <h3>NV ODMR Simulator</h3>
-        <p>Simulates ODMR spectra and experiments to accelerate NV-sensing development and validation.</p>
-        <div class="tags"><span>Python</span><span>Simulation</span></div>
+        <div class="tags"><span>React</span><span>FastAPI</span><span>SciPy</span><span>Web Development</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/CycleGAN-for-Cultural-Style-Transfer-Translating-Bandhani-Textile-Motifs-to-Contemporary-Style" target="_blank" rel="noopener">
         <h3>Bandhani Style Transfer</h3>
         <p>CycleGAN translating traditional textile motifs into contemporary designs with curated datasets.</p>
-        <div class="tags"><span>PyTorch</span><span>GANs</span></div>
+        <div class="tags"><span>PyTorch</span><span>GANs</span><span>Image Processing</span><span>Deep Learning</span></div>
       </a>
-      <a class="project card" href="https://github.com/Aman-Sunesh/Multi-Label-Conditional-Diffusion-for-Disease-Specific-Chest-X-ray-Synthesis-using-ChestX-ray14" target="_blank" rel="noopener">
-        <h3>Chest X-ray Diffusion</h3>
-        <p>Conditional diffusion to synthesize disease-specific images, augmenting rare pathology training.</p>
-        <div class="tags"><span>Diffusion</span><span>Medical ML</span></div>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Lossless-Compression-of-Large-Traffic-Datasets-Using-Feature-Based-Selective-Sampling" target="_blank" rel="noopener">
+        <h3>Lossless Traffic Compression</h3>
+        <p>Achieved 700×–2000× lossless compression of traffic matrices using feature-based sampling and matrix completion. Compression improves with dataset size and stabilizes for 10⁴–10⁵ vehicle entries. Implemented full encoding, decoding, and BCD optimization in NumPy/SciPy.</p>
+        <div class="tags"><span>Data Analysis</span><span>Matrix Completion</span><span>Traffic Modeling</span><span>Data Compression</span><span>Python</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Generating-Fashion-MNIST-Apparel-using-DCGANs-" target="_blank" rel="noopener">
+        <h3>Fashion-MNIST DCGAN</h3>
+        <p>Trained a DCGAN in PyTorch to generate Fashion-MNIST clothing from latent vectors. Includes full adversarial pipeline, loss tracking, and checkpointed models.</p>
+        <div class="tags"><span>PyTorch</span><span>GANs</span><span>Deep Learning</span><span>Generative Modeling</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/NV-ODMR-Simulator-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
+        <h3>NV ODMR Simulator</h3>
+        <p>Simulates ODMR spectra and experiments to accelerate NV-sensing development and validation.</p>
+        <div class="tags"><span>Python</span><span>Simulation</span><span>Quantum Sensing</span><span>Scientific Computing</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/Time-Series-Forecasting-Forecasting-the-Lorenz-System-with-Fully-Connected-Feedforward-Networks" target="_blank" rel="noopener">
         <h3>Lorenz Forecasting</h3>
-        <p>Forecasts chaotic dynamics using FC networks with careful normalization and rollout evaluation.</p>
-        <div class="tags"><span>Deep Learning</span><span>Dynamics</span></div>
+        <p>Forecasts chaotic dynamics using fully connected feed-feedforward networks. Implements both direct and iterative methods, with custom training loops and RMSE evaluation across horizons.</p>
+        <div class="tags"><span>Deep Learning</span><span>Time Series Forecasting</span><span>Mathematical Modeling</span><span>Python</span><span>Dynamical Systems</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/eCampusExplorer-NYUAD-Virtual-Campus-Tour" target="_blank" rel="noopener">
+        <h3>eCampusExplorer</h3>
+        <p>Voice-navigated 3D campus tour of NYU Abu Dhabi built in Unity with teleportation, voice transcription, and interactive scene switching.</p>
+        <div class="tags"><span>Unity</span><span>C#</span><span>3D Simulation</span><span>VR</span><span>Interactive UX</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/Custom-14-bit-Microprocessor-FPGA-Implementation" target="_blank" rel="noopener">
-        <h3>Custom 14-bit µProcessor</h3>
-        <p>RTL design and FPGA implementation with ALU and control for educational compute pipelines.</p>
-        <div class="tags"><span>FPGA</span><span>RTL</span></div>
-      </a>
-      <a class="project card" href="https://github.com/Aman-Sunesh/Audio2Text-Transcriber" target="_blank" rel="noopener">
-        <h3>Audio2Text Transcriber</h3>
-        <p>Lightweight audio transcription toolkit with configurable inference options.</p>
-        <div class="tags"><span>Python</span><span>ASR</span></div>
+        <h3>Custom 14-bit Microprocessor</h3>
+        <p>Designed and implemented a 14-bit signed microprocessor in VHDL with 16-instruction ISA, ALU, branching, and seven-segment FPGA display. Supports full simulation and hardware execution of custom binary programs.</p>
+        <div class="tags"><span>FPGA</span><span>VHDL</span><span>Microarchitecture</span></div>
       </a>
     </div>
   </section>
 
   <section id="education" class="container section">
     <h2 class="section-title">Education</h2>
-    <div class="timeline">
-      <article class="card">
-        <div class="card-head">
-          <h3>New York University Abu Dhabi</h3>
-          <span class="meta">B.Sc. Computer Engineering • Minor in Applied Mathematics • Aug 2023 – May 2027</span>
+
+    <article class="card edu">
+      <header class="edu-head">
+        <h3>New York University Abu Dhabi</h3>
+        <div class="edu-sub">B.Sc. Computer Engineering • Minor in Applied Mathematics</div>
+        <div class="edu-dates">Aug 2023 – May 2027</div>
+      </header>
+      <div class="edu-grid">
+        <div>
+          <div class="kv"><span class="k">GPA</span><span class="v">3.984 / 4.00</span></div>
+          <div class="k">Coursework</div>
+          <ul class="bullets tight">
+            <li>Applied Machine Learning</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Digital Logic, Circuits</li>
+            <li>Probability & Statistics</li>
+            <li>ODE/PDEs, Mathematical Modeling</li>
+          </ul>
         </div>
-        <p>GPA 3.984/4.00. Coursework includes Applied ML, Data Structures & Algorithms, Digital Logic, Circuits, Probability & Statistics, ODE/PDEs, Mathematical Modeling.</p>
-        <p>Activities: Quantum Association, Student Government (Campus Spaces Chair), iGEM Software/Modeling, EA Fellowships, URBZ Dharavi.</p>
-      </article>
-      <article class="card">
-        <div class="card-head">
-          <h3>The Coding School</h3>
-          <span class="meta">Quantum Computing • Sep 2024 – Apr 2025</span>
+        <div>
+          <div class="k">Activities</div>
+          <ul class="bullets tight">
+            <li>Quantum Association</li>
+            <li>Student Government — Campus Spaces Chair</li>
+            <li>iGEM — Software/Modeling</li>
+            <li>Effective Altruism (EA) Fellowships</li>
+          </ul>
         </div>
-        <p>Two-semester program by Google AI & The Coding School covering quantum algorithms, cryptography, entanglement, and superposition with Python labs.</p>
-      </article>
-      <article class="card">
-        <div class="card-head">
-          <h3>GEMS Education</h3>
-          <span class="meta">High School Diploma • Apr 2009 – Mar 2023</span>
+      </div>
+    </article>
+
+    <article class="card edu">
+      <header class="edu-head">
+        <h3>
+          NYU Tandon School of Engineering
+        </h3>
+        <div class="edu-sub">B.Sc. Computer Engineering (Study Away Semester)</div>
+        <div class="edu-dates">Aug 2025</div>
+      </header>
+      <div class="edu-grid">
+        <div>
+          <div class="k">Coursework</div>
+          <ul class="bullets tight">
+            <li>Graduate Quantum Computation</li>
+            <li>Probabilistic Time Series Analysis</li>
+            <li>Computer Organization &amp; Architecture</li>
+            <li>Quantum Programming</li>
+          </ul>
         </div>
-        <p>CBSE 97.6% Senior Secondary. Principal’s Award for Excellence and leadership roles.</p>
-      </article>
-    </div>
+        <div>
+          <div class="k">Notes</div>
+          <ul class="bullets tight">
+            <li>Study Away Semester at NYU Tandon School of Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="card edu">
+      <header class="edu-head">
+        <h3>The Coding School</h3>
+        <div class="edu-sub">Quantum Computing</div>
+        <div class="edu-dates">Sep 2024 – Apr 2025</div>
+      </header>
+      <div class="edu-grid">
+        <div>
+          <div class="k">Focus</div>
+          <ul class="bullets tight">
+            <li>Quantum algorithms and cryptography</li>
+            <li>Quantum mechanics</li>
+            <li>Python-based labs and projects</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="card edu">
+      <header class="edu-head">
+        <h3>GEMS Education</h3>
+        <div class="edu-sub">High School Diploma</div>
+        <div class="edu-dates">Apr 2009 – Mar 2023</div>
+      </header>
+      <div class="edu-grid">
+        <div>
+          <div class="kv"><span class="k">Score</span><span class="v">CBSE 97.6% (Senior Secondary)</span></div>
+        </div>
+        <div>
+          <div class="k">Highlights</div>
+          <ul class="bullets tight">
+            <li>Principal’s Award for Excellence</li>
+            <li>Leadership Council Member</li>
+          </ul>
+        </div>
+      </div>
+    </article>
   </section>
 
   <section id="awards" class="container section">
     <h2 class="section-title">Certifications & Awards</h2>
-    <div class="grid three">
-      <div class="card">
-        <h3>IBM Quantum Excellence Badge</h3>
-        <p>Completed labs in quantum programming and error correction.</p>
+
+    <div class="grid two">
+
+      <div class="card award">
+        <h3>IBM Quantum Excellence <span class="pill">Award</span></h3>
+        <div class="meta">IBM</div>
+        <ul class="bullets tight">
+          <li>Awarded for completing all Qiskit labs with strong performance.</li>
+          <li>Skills: quantum circuits, transpilation, error suppression/mitigation, basics of QEC.</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Qiskit Global Summer School 2024</h3>
-        <p>Participation and IBM Quantum labs.</p>
+
+      <div class="card award">
+        <h3>Qiskit Global Summer School 2024 <span class="pill">Certification</span></h3>
+        <div class="meta">IBM • Qiskit</div>
+        <ul class="bullets tight">
+          <li>Hands-on labs: Circuit Transpilation, Error Suppression & Mitigation, Simulating Nature.</li>
+          <li>Certificate of participation and successful completion of core labs.</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>International Youth Math Challenge</h3>
-        <p>Silver Honour.</p>
+
+      <div class="card award">
+        <h3>International Youth Math Challenge <span class="pill">Silver Honour</span></h3>
+        <div class="meta">IYMC</div>
+        <ul class="bullets tight">
+          <li>Recognized for high performance in an international problem-solving competition.</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Intro to Computer Vision & Image Processing</h3>
-        <p>IBM.</p>
+
+      <div class="card award">
+        <h3>IBM Courses <span class="pill">Certification</span></h3>
+        <div class="meta">IBM</div>
+        <ul class="bullets tight">
+          <li>Intro to Computer Vision &amp; Image Processing — fundamentals of CV techniques.</li>
+          <li>Intro to HTML, CSS &amp; JavaScript — web foundations and basic interactivity.</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Intro to HTML, CSS & JavaScript</h3>
-        <p>IBM.</p>
-      </div>
-      <div class="card">
-        <h3>Best Research Poster</h3>
-        <p>NYUAD Summer Research Symposium 2025.</p>
+
+      <div class="card award">
+        <h3>Best Research Poster <span class="pill">1st Place</span></h3>
+        <div class="meta">NYUAD Summer Research Symposium 2025</div>
+        <ul class="bullets tight">
+          <li>Project: Quantum Diamond Spectrometer (NV-center sensing) with nanosecond pulse control.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -275,9 +435,6 @@
       </div>
       <button class="btn primary" id="submit-btn" type="submit">Send Message</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      <div class="alt-contact">
-        <a href="mailto:as18181@nyu.edu">as18181@nyu.edu</a> • <a href="tel:+971545675180">+971 54 567 5180</a>
-      </div>
     </form>
   </section>
 </main>
@@ -287,7 +444,7 @@
     <div class="foot-links">
       <a href="https://github.com/Aman-Sunesh" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/aman-sunesh" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:as18181@nyu.edu">Email</a>
+      <a href="mailto:as18181@nyu.edu" aria-label="Email Aman">Email</a>
     </div>
     <div class="foot-copy">© <span id="year"></span> Aman Sunesh</div>
   </div>
