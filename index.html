@@ -6,8 +6,8 @@
 
   <title>Aman Sunesh | Computer Engineering @ NYU Abu Dhabi | GitHub & Projects</title>
 
-  <meta name="description" content="Aman Sunesh — Computer Engineering & Applied Math @ NYU Abu Dhabi ’27. Quantum sensing (NV centers), scientific ML, and full-stack research tools. GitHub: github.com/Aman-Sunesh">
-
+  <meta name="description" content="Aman Sunesh — Computer Engineering & Applied Math @ NYU Abu Dhabi ’27 (Study Away @ NYU Tandon). Quantum sensing (NV centers), MNAR time-series modeling, and full-stack research tools. GitHub: github.com/Aman-Sunesh">
+  
   <meta name="theme-color" content="#6a11cb">
   <link rel="canonical" href="https://aman-sunesh.github.io/">
 
@@ -17,7 +17,7 @@
   <link rel="me" href="https://www.kaggle.com/amansunesh/">
 
   <meta property="og:title" content="Aman Sunesh — Portfolio">
-  <meta property="og:description" content="Computer Engineering @ NYU Abu Dhabi. Quantum sensing, ML pipelines, and end-to-end scientific tools.">
+  <meta property="og:description" content="Computer Engineering @ NYU Abu Dhabi (Study Away @ NYU Tandon). Quantum sensing, MNAR time-series modeling, and end-to-end scientific tools.">
   <meta property="og:url" content="https://aman-sunesh.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://aman-sunesh.github.io/images/profile.jpg">
@@ -86,7 +86,7 @@
   <section class="hero container">
     <div class="hero-text">
       <h1><span class="visually-hidden">Aman Sunesh — </span>Designing intelligent systems — from quantum sensors to machine learning pipelines</h1>
-      <p>I'm a Computer Engineering student at NYU Abu Dhabi building practical tools at the intersection of quantum technology and AI. My work spans quantum sensing platforms using NV centers and pulse-timed optics, full-stack pharmacokinetic simulation apps, and machine learning pipelines for medical imaging and vision tasks. I care about reproducibility, hardware–software synergy, and results that ship.</p>
+      <p>I'm a Computer Engineering student at NYU Abu Dhabi building practical tools at the intersection of sensing systems and machine learning. My work spans NV-center quantum sensing platforms with nanosecond pulse control, <strong>MNAR time-series modeling of sensor blackouts</strong> (state-dependent missingness + Kalman/EM pipelines), full-stack pharmacokinetic simulation apps, and ML pipelines for imaging and vision. I care about reproducibility, hardware–software synergy, and results that ship.</p>
       <div class="cta">
         <a
           class="btn primary"
@@ -122,7 +122,7 @@
   <section id="about" class="container section">
     <h2 class="section-title">About Me</h2>
     <div class="about">
-      <p>I work across AI and quantum, building everything from deep learning models to real-world sensing systems. On the quantum side, I developed a <strong>Full-Stack NV-center spectrometer</strong> with nanosecond pulse control and a PyQt6 GUI for code-free experiment execution. In ML, I lead projects end-to-end—from scraping and curating datasets to training models and shipping interactive tools. Recent work includes <strong>GANDhani</strong>, a CycleGAN-based cultural style transfer system for textile design, featuring custom scraping scripts, curated Kaggle datasets, PyTorch training loops, and a live Gradio demo. I care about clarity, reproducibility, and building things that actually work.</p>
+      <p>I work across AI and experimental systems, building everything from deep learning models to real-world sensing platforms. On the quantum side, I developed a <strong>full-stack NV-center spectrometer</strong> with nanosecond pulse control and a PyQt6 GUI for code-free experiment execution. Recently, I’ve been leaning hard into <strong>time-series + reliability</strong>: modeling <strong>information blackouts in MNAR sensor streams</strong> (state-dependent missingness) with Kalman filtering/RTS smoothing and EM learning, and turning these ideas into clean, reproducible research code. I also ship full-stack research tools, from PK/PD simulators to database-backed applications. I care about clarity, reproducibility, and building things that actually work.</p>
 
       <div class="facts card">
         <div class="kv"><span class="k">Location</span><span class="v">Manhattan, New York</span></div>
@@ -145,17 +145,22 @@
           <span class="chip">HTML</span>
           <span class="chip">CSS</span>
           <span class="chip">C#</span>
+          <span class="chip">VHDL</span>
           <span class="chip">MySQL</span>
         </div>
-        <h3 class="subheading">Libraries</h3>
+        <h3 class="subheading">Libraries &amp; Frameworks</h3>
         <div class="chips">
           <span class="chip">NumPy</span>
           <span class="chip">Pandas</span>
+          <span class="chip">SciPy</span>
           <span class="chip">Matplotlib</span>
           <span class="chip">OpenCV</span>
           <span class="chip">PyTorch</span>
           <span class="chip">TensorFlow</span>
           <span class="chip">Qiskit</span>
+          <span class="chip">PyQt6</span>
+          <span class="chip">React</span>
+          <span class="chip">FastAPI</span>
         </div>
         <h3 class="subheading">Spoken</h3>
         <div class="chips">
@@ -174,20 +179,8 @@
           <span class="chip">LaTeX</span>
           <span class="chip">MATLAB</span>
           <span class="chip">Cadence</span>
+          <span class="chip">Xilinx Vivado</span>
           <span class="chip">Unity</span>
-        </div>
-
-        <h3 class="subheading">Fabrication & Measurement</h3>
-        <div class="chips">
-          <span class="chip">Photolithography</span>
-          <span class="chip">Thin-film Deposition</span>
-          <span class="chip">Film Metrology</span>
-          <span class="chip">Device Patterning (Hall bars, test wires)</span>
-          <span class="chip">Optical Setup & Alignment</span>
-          <span class="chip">Data Acquisition & Instrumentation</span>
-          <span class="chip">Timing, Triggering & Clock Synchronization</span>
-          <span class="chip">Cryogenic Measurements</span>
-          <span class="chip">Data Analysis & Reporting</span>
         </div>
       </div>
     </div>
@@ -301,6 +294,11 @@
   <section id="projects" class="container section">
     <h2 class="section-title">Projects</h2>
     <div class="grid three">
+      <a class="project card" href="https://github.com/BlackoutBayes/Modeling-Information-Blackouts-in-MNAR-Time-Series" target="_blank" rel="noopener">
+        <h3>Modeling Information Blackouts (MNAR Time Series)</h3>
+        <p>MNAR-aware linear dynamical system for traffic sensors, modeling state-dependent outages; trained with EM and inferred with EKF/RTS, outperforming LOCF and MAR baselines..</p>
+        <div class="tags"><span>Time Series</span><span>Kalman Filtering</span><span>EM</span><span>MNAR</span><span>Python</span></div>
+      </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/QuPyT-GUI-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
         <h3>QuPyt GUI for Quantum Sensing</h3>
         <p>PyQt6 interface for code-free Quantum Sensing experiments: protocol editor, YAML generation, live ODMR fitting, and device control.</p>
@@ -310,6 +308,11 @@
         <h3>EV-PK Simulator</h3>
         <p>Web app for PK/PD fitting and simulation with KPI extraction, dosing builder, VPCs, and PDF export.</p>
         <div class="tags"><span>React</span><span>FastAPI</span><span>SciPy</span><span>Web Development</span></div>
+      </a>
+      <a class="project card" href="https://github.com/Aman-Sunesh/Airline-Ticket-Reservation-System-Using-MySQL-and-Flask" target="_blank" rel="noopener">
+        <h3>Airline Ticket Reservation System</h3>
+        <p>Developed a MySQL-backed airline reservation system with a Flask web app, supporting flight search, ticket purchase, trip history, and staff dashboards on a normalized relational schema.</p>
+        <div class="tags"><span>MySQL</span><span>Flask</span><span>SQL</span><span>Backend</span><span>Web App</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/CycleGAN-for-Cultural-Style-Transfer-Translating-Bandhani-Textile-Motifs-to-Contemporary-Style" target="_blank" rel="noopener">
         <h3>Bandhani Style Transfer</h3>
@@ -360,7 +363,7 @@
       </header>
       <div class="edu-grid">
         <div>
-          <div class="kv"><span class="k">GPA</span><span class="v">3.984 / 4.00</span></div>
+          <div class="kv"><span class="k">Cumulative GPA</span><span class="v">3.986 / 4.00</span></div>
           <div class="k">Coursework</div>
           <ul class="bullets tight">
             <li>Applied Machine Learning</li>
@@ -392,20 +395,25 @@
       </header>
       <div class="edu-grid">
         <div>
+          <div class="kv"><span class="k">GPA</span><span class="v">4.00 / 4.00</span></div>
           <div class="k">Coursework</div>
           <ul class="bullets tight">
-            <li>Probabilistic Time Series Analysis — Graduate Course</li>
+            <li>Probabilistic Time Series Analysis (Graduate Level)</li>
+            <li>Databases</li>
             <li>Computer Networking</li>
             <li>Artificial Intelligence</li>
-            <li>Databases</li>
             <li>Electronics</li>
-            <li>ECE Professional Development Course</li>
+            <li>Computer Architecture and Organization</li>
+            <li>Network Security</li>
+            <li>Robotic Manipulation and Locomotion</li>
+            <li>Robot Vision</li>
           </ul>
         </div>
         <div>
           <div class="k">Notes</div>
           <ul class="bullets tight">
-            <li>Study Away Semester at NYU Tandon School of Engineering</li>
+            <li>Study Away Year at NYU Tandon School of Engineering</li>
+            <li>Focused on time series, systems, networking, and robotics.</li>
           </ul>
         </div>
       </div>
