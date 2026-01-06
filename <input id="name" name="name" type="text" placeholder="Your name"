@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="color-scheme" content="light dark">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
 
 
-  <title>Aman Sunesh | Computer Engineering & Applied Math @ NYU Abu Dhabi | Portfolio</title>
+  <title>Aman Sunesh | Computer Engineering @ NYU Abu Dhabi | GitHub & Projects</title>
 
   <meta name="description" content="Aman Sunesh — Computer Engineering & Applied Math @ NYU Abu Dhabi ’27 (Study Away @ NYU Tandon). Quantum sensing (NV centers), MNAR time-series modeling, and full-stack research tools. GitHub: github.com/Aman-Sunesh">
   
@@ -25,15 +24,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://aman-sunesh.github.io/images/profile.jpg">
   <meta property="og:image:alt" content="Portrait of Aman Sunesh">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Aman Sunesh">
   <meta property="og:locale" content="en_US">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aman Sunesh — Portfolio">
-  <meta name="twitter:description" content="Computer Engineering @ NYU Abu Dhabi (Study Away @ NYU Tandon). Quantum sensing, MNAR time-series modeling, and end-to-end scientific tools.">
-  <meta name="twitter:image" content="https://aman-sunesh.github.io/images/profile.jpg">
 
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Aman Sunesh">
@@ -45,7 +37,6 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://aman-sunesh.github.io/#aman-sunesh",
     "name": "Aman Sunesh",
     "url": "https://aman-sunesh.github.io/",
     "image": "https://aman-sunesh.github.io/images/profile.jpg",
@@ -55,7 +46,6 @@
     "sameAs": [
       "https://github.com/Aman-Sunesh",
       "https://www.linkedin.com/in/aman-sunesh/",
-      "https://www.youtube.com/@AmanSunesh",
       "https://www.kaggle.com/amansunesh/",
       "https://x.com/AmanSunesh"
     ]
@@ -64,8 +54,7 @@
 
   <!-- Existing assets -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preload" as="image" href="/images/profile.jpg">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="/style.css?v=2">
 
   <!-- EmailJS & site scripts -->
@@ -96,6 +85,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#awards">Awards</a>
@@ -149,6 +139,35 @@
           decoding="async">
     </div>
   </section>
+
+  <section id="publications" class="container section">
+    <h2 class="section-title">Publications</h2>
+
+    <article class="card pub">
+      <header class="pub-head">
+        <h3>Modeling Information Blackouts in Missing Not-At-Random Time Series Data</h3>
+        <div class="pub-meta">
+          <span class="venue">Preprint</span>
+          <span aria-hidden="true">•</span>
+          <time datetime="2026-01">Jan 2026</time>
+        </div>
+      </header>
+
+      <p>
+        MNAR-aware state-space modeling for traffic sensors, treating blackout patterns as an informative observation channel
+        and evaluating both blackout imputation and post-blackout forecasting.
+      </p>
+
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2601.01480" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <a href="https://doi.org/10.48550/arXiv.2601.01480" target="_blank" rel="noopener noreferrer">DOI</a>
+        <a href="https://doi.org/10.5281/zenodo.18146528" target="_blank" rel="noopener noreferrer">Zenodo</a>
+        <a href="https://doi.org/10.5281/zenodo.18146529" target="_blank" rel="noopener noreferrer">Zenodo (v1)</a>
+        <a href="https://doi.org/10.31224/6180" target="_blank" rel="noopener noreferrer">engrXiv</a>
+      </div>
+    </article>
+  </section>
+
 
   <section id="about" class="container section">
     <h2 class="section-title">About Me</h2>
@@ -335,11 +354,6 @@
       <a class="project card" href="https://github.com/BlackoutBayes/Modeling-Information-Blackouts-in-MNAR-Time-Series" target="_blank" rel="noopener">
         <h3>Modeling Information Blackouts (MNAR Time Series)</h3>
         <p>MNAR-aware linear dynamical system for traffic sensors, modeling state-dependent outages; trained with EM and inferred with EKF/RTS, outperforms LOCF and MAR baselines.</p>
-        <p class="meta">
-          <a href="https://arxiv.org/abs/2601.01480" target="_blank" rel="noopener noreferrer">arXiv</a>
-          · <a href="https://doi.org/10.5281/zenodo.18146529" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>
-          · <a href="https://doi.org/10.31224/6180" target="_blank" rel="noopener noreferrer">engrXiv</a>
-        </p>
         <div class="tags"><span>Time Series</span><span>Kalman Filtering</span><span>EM</span><span>MNAR</span><span>Python</span></div>
       </a>
       <a class="project card" href="https://github.com/Aman-Sunesh/QuPyT-GUI-for-Quantum-Sensing-Experiments" target="_blank" rel="noopener">
@@ -590,7 +604,6 @@
       <div class="field">
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6" placeholder="How can I help?" autocomplete="off" required></textarea>
-       </div>
       </div>
       <button class="btn primary" id="submit-btn" type="submit">Send Message</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
