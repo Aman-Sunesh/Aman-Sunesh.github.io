@@ -97,7 +97,7 @@ body{
 .stat small{color:var(--muted)}
 .hero-media{display:flex;justify-content:center}
 @media (min-width:961px){
-  .hero-media{ margin-top:-18px; }
+  .hero-media{ transform: translateY(-18px); }
 }
 .portrait{width:100%;max-width:360px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 40px rgba(0,0,0,.35)}
 .about{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
