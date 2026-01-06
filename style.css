@@ -107,7 +107,7 @@ body{
  display:flex;
  justify-content:center;
  align-self:start;
- margin-top:-20px;
+ margin-top:-25px;
 }
 @media (min-width:961px){
 .hero-media{
