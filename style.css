@@ -228,8 +228,40 @@ details.more-roles .card + .card{
 .secondary{opacity:.95}
 .tertiary{opacity:.9}
 
-.pub-links { display:flex; flex-wrap:wrap; gap:.6rem 1rem; margin-top:.75rem; }
-.pub-links a { text-decoration: none; }
+.pub-links{
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+ margin-top:12px;
+ align-items:center;
+}
+
+.pub-links a{
+ display:inline-flex;
+ align-items:center;
+ padding:6px 10px;
+ border-radius:999px;
+ background:rgba(255,255,255,.06);
+ border:1px solid rgba(255,255,255,.10);
+ color:var(--text);
+ font-size:12px;
+ font-weight:600;
+ text-decoration:none;
+ transition:transform .15s ease, border-color .15s ease, background-color .15s ease;
+}
+
+.pub-links a:visited{ color:var(--text); }
+
+.pub-links a:hover{
+ border-color:rgba(255,255,255,.22);
+ background:rgba(255,255,255,.08);
+ transform:translateY(-1px);
+}
+
+.pub-links a:focus{
+ outline:0;
+ box-shadow:0 0 0 6px var(--ring);
+}
 .pub-meta { opacity: .85; margin-top: .25rem; }
 .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
 .skip-link:focus { left:1rem; top:1rem; width:auto; height:auto; padding:.6rem .8rem; z-index:9999; }
