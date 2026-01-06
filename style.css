@@ -255,7 +255,7 @@ details.more-roles .card + .card{
 
 .pub-links a:visited{
  color: var(--accent);
-  
+}
 .pub-links a:hover{
  background: rgba(34,211,238,.16);
  border-color: rgba(34,211,238,.55);
