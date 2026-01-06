@@ -239,23 +239,24 @@ details.more-roles .card + .card{
 .pub-links a{
  display:inline-flex;
  align-items:center;
- padding:6px 10px;
+ padding:7px 11px;
  border-radius:999px;
- background:rgba(255,255,255,.06);
- border:1px solid rgba(255,255,255,.10);
- color:var(--text);
+ color: var(--accent);
+ background: rgba(34,211,238,.10);
+ border: 1px solid rgba(34,211,238,.35);
  font-size:12px;
- font-weight:600;
+ font-weight:700;
  text-decoration:none;
- transition:transform .15s ease, border-color .15s ease, background-color .15s ease;
+ transition: transform .15s ease, border-color .15s ease, background-color .15s ease, color .15s ease;
 }
 
-.pub-links a:visited{ color:var(--text); }
-
+.pub-links a:visited{
+ color: var(--accent);
+  
 .pub-links a:hover{
- border-color:rgba(255,255,255,.22);
- background:rgba(255,255,255,.08);
- transform:translateY(-1px);
+ background: rgba(34,211,238,.16);
+ border-color: rgba(34,211,238,.55);
+ transform: translateY(-1px);
 }
 
 .pub-links a:focus{
