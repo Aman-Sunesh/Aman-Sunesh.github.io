@@ -228,6 +228,12 @@ details.more-roles .card + .card{
 .secondary{opacity:.95}
 .tertiary{opacity:.9}
 
+.pub-links { display:flex; flex-wrap:wrap; gap:.6rem 1rem; margin-top:.75rem; }
+.pub-links a { text-decoration: none; }
+.pub-meta { opacity: .85; margin-top: .25rem; }
+.skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+.skip-link:focus { left:1rem; top:1rem; width:auto; height:auto; padding:.6rem .8rem; z-index:9999; }
+
 .pill{
   font-size:12px;
   font-weight:700;
