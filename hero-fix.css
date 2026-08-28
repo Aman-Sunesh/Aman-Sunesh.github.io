@@ -21,7 +21,7 @@
   grid-template-columns:minmax(0,1.2fr) minmax(300px,.72fr);
   gap:50px;
   align-items:start;
-  padding:68px 0 64px;
+  padding:68px 0 34px;
 }
 .hero h1{
   font-size:clamp(42px,5vw,62px);
@@ -46,6 +46,10 @@
   filter:none;
 }
 
+#research.section{
+  padding-top:42px;
+}
+
 @media(max-width:900px){
   .container{
     width:min(100% - 56px,1120px);
@@ -54,6 +58,7 @@
     grid-template-columns:1fr;
     gap:30px;
     padding-top:56px;
+    padding-bottom:30px;
   }
   .hero-media{
     justify-content:flex-start;
@@ -61,6 +66,9 @@
   }
   .portrait{
     width:min(100%,320px);
+  }
+  #research.section{
+    padding-top:36px;
   }
 }
 
