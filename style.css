@@ -23,7 +23,7 @@ body{
 a{color:inherit}
 img{max-width:100%;height:auto;display:block}
 .container{width:min(1080px,calc(100% - 40px));margin:0 auto}
-.section{padding:88px 0;scroll-margin-top:72px}
+.section{padding:56px 0;scroll-margin-top:72px}
 .site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(11,15,20,.82);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px 0}
 .brand{text-decoration:none;font-weight:700;letter-spacing:-.02em}
@@ -97,4 +97,4 @@ img{max-width:100%;height:auto;display:block}
 .to-top{position:fixed;right:20px;bottom:20px;width:38px;height:38px;display:grid;place-items:center;border-radius:50%;text-decoration:none;background:#18202a;border:1px solid var(--line);opacity:0;pointer-events:none;transition:.15s}
 .to-top.show{opacity:1;pointer-events:auto}
 @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:64px;gap:36px}.hero-media{justify-content:flex-start}.portrait{max-width:260px}.signals{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:1fr}.contact-card{align-items:flex-start;flex-direction:column}.contact-links{justify-content:flex-start}}
-@media(max-width:720px){.container{width:min(100% - 28px,1080px)}.section{padding:64px 0}.nav-links{position:absolute;left:0;right:0;top:58px;background:#0b0f14;border-bottom:1px solid var(--line);padding:14px;display:none}.nav-links.open{display:grid;gap:12px}.menu-toggle{display:block}.grid.two{grid-template-columns:1fr}.role-head,.education-main{flex-direction:column;gap:10px}.role-date{white-space:normal}.education-meta{text-align:left;white-space:normal}.hero h1{font-size:40px}.lead{font-size:16px}.signals{grid-template-columns:1fr 1fr}.foot{flex-direction:column}}
+@media(max-width:720px){.container{width:min(100% - 28px,1080px)}.section{padding:48px 0}.nav-links{position:absolute;left:0;right:0;top:58px;background:#0b0f14;border-bottom:1px solid var(--line);padding:14px;display:none}.nav-links.open{display:grid;gap:12px}.menu-toggle{display:block}.grid.two{grid-template-columns:1fr}.role-head,.education-main{flex-direction:column;gap:10px}.role-date{white-space:normal}.education-meta{text-align:left;white-space:normal}.hero h1{font-size:40px}.lead{font-size:16px}.signals{grid-template-columns:1fr 1fr}.foot{flex-direction:column}}
